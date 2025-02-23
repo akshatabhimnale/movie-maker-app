@@ -24,7 +24,7 @@ const addNewMovie = gql`
 
 const AddMovie = () => {
     const [newMovieData, { data, loading, error }] = useMutation(addNewMovie);
-
+    console.log(data)
     const [movieName, setMovieName] = useState('')
     const [movieGenre, setMovieGenre] = useState('')
      const [movieYear,setMovieYear] = useState('')

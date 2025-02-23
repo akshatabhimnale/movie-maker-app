@@ -63,7 +63,7 @@ const movies = [
         year:"2025"
     },
 ]
-
+console.log(movies)
 const Movies = () => {
     const { loading, error, data } = useQuery(listAllMovies);
      console.log(data)
